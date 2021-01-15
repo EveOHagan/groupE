@@ -535,7 +535,7 @@ function submit(){
      postE["Experience"] = experience;
      postE["Comment"] = comment;
      postE["Occupation"] = occupation;
-     postE["timestamp"] = firebase.firestore.FieldValue.serverTimestamp();
+     postE["Timestamp"] = firebase.firestore.FieldValue.serverTimestamp();
      const db = firebase.firestore();
      db.collection("postExperiment").doc().set(postE)
          .then(function () {
